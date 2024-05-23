@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
 
-const Card = () => {
-  return <div>Hola, soy una tarjeta</div>;
-};
+function Card({ name, color }) {
+  return (
+    <div>
+      <h2>Hola {name}!</h2>
+      <p>Sabemos que tu color favorito es {color}</p>
+    </div>
+  );
+}
 
 export default Card;
